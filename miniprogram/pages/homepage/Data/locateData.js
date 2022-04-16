@@ -32,3 +32,4 @@ var locateData = [
 module.exports = {
     locateData:locateData
 }
+

@@ -1,7 +1,153 @@
-@import "./comment-tpl.wxss";
-
-.locateInfoTpl {
+.info-container {
     position: relative;
+    display: inline-flex;
+    flex-direction: column;
     margin-top: 14rpx;
-    margin-left: 50rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    border-radius: 35rpx;
+    width: 600rpx;
+    height: 518rpx;
+    background-color: #f7f7f7;
+}
+
+.infoImg {
+    position: relative;
+    border-top-left-radius: 35rpx;
+    border-top-right-radius: 35rpx;
+    width: 600rpx;
+}
+
+.starContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    left: 34rpx;
+    top: 32rpx;
+    border-radius: 35rpx;
+    width: 200rpx;
+    height: 60rpx;
+    background: rgba(255, 255, 255, 0.96);
+    
+}
+
+.score {
+    position: relative;
+    font-size: 30rpx;
+    font-weight: bold;
+}
+
+.star {
+    position: relative;
+    margin-left: 6rpx;
+    color: #FF673D;
+    font-size: 26rpx;
+}
+
+.starNum {
+    position: relative;
+    margin-left: 10rpx;
+    font-size: 24rpx;
+    color:rgba(27, 27, 33, 0.3);
+}
+
+.starBtn {
+    position: absolute;
+    right: 34rpx;
+    top: 32rpx;
+    color: #FF673D;
+    font-size: 56rpx;
+}
+
+.infoTitle {
+    position: relative;
+    margin-top: 20rpx;
+    margin-left: 14rpx;
+    font-size: 35rpx;
+    font-weight: bold;
+    color: #000;
+}
+
+.info {
+    position: relative;
+    margin-left: 14rpx;
+    margin-top: 14rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 390rpx;
+    height: 35rpx;
+}
+
+.positionIcon {
+    position: relative;
+    margin-left: 0rpx;
+    font-size: 37rpx;
+    font-weight: bold;
+    color: #FF673D;
+}
+
+.dist {
+    position: relative;
+    margin-left: 5rpx;
+    font-size: 30rpx;
+    color: #707070;
+}
+
+.timeIcon {
+    position: relative;
+    margin-left: 100rpx;
+    font-size: 33rpx;
+    color: #FF673D;
+    font-weight: bold;
+}
+
+.timeInfo {
+    position: relative;
+    margin-left: 5rpx;
+    font-size: 30rpx;
+    color: #707070;
+}
+
+.commentInfo {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 580rpx;
+    height: 40rpx;
+    margin-top: 10rpx;
+    margin-left: -10rpx;
+    margin-bottom: 30rpx;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.cmt {
+    position: relative;
+    margin-left: 10rpx;
+    width: 114rpx;
+    height: 40rpx;
+    border-radius: 10rpx;
+    line-height: 40rpx;
+    background-color: rgba(255, 103, 61, 0.1);
+    font-size: 23rpx;
+    color: #474747;
+}
+
+.cmt1 {
+    position: relative;
+    margin-left: 10rpx;
+    width: 134rpx;
+    height: 40rpx;
+    border-radius: 10rpx;
+    line-height: 40rpx;
+    background-color: rgba(255, 103, 61, 0.1);
+    font-size: 23rpx;
+    color: #474747;
 }

@@ -1,8 +1,6 @@
-<import src="../Tample/comment-tpl"/>
-
 <template name="locateInfoTpl">
     <view class="info-container">
-        <image class="infoImg" src="{{item.image}}"></image>
+        <image class="infoImg" src="{{item.image}}" mode="aspectFill"></image>
         <view class="starContainer">
             <view class="score">{{item.grade}}</view>
             <view class="star iconfont icon-star"></view>
@@ -16,10 +14,11 @@
             <view class="timeIcon iconfont icon-time"></view>
             <view class="timeInfo">{{item.time}}</view>
         </view>
-        <scroll-view class="commentInfo" scroll-x="true">
-            <block wx:for="{{commentData}}" wx:for-item="item1" wx:key="key">
-                <template is="commentTpl" data="{{item1}}">{{}}</template>
-            </block>
-        </scroll-view>
+        <view class="commentInfo">
+            <view class="cmt">{{item.comment.comment1}}</view>
+            <view class="cmt1">{{item.comment.comment2}}</view>
+            <view class="cmt">{{item.comment.comment3}}</view>
+            <view class="cmt">{{item.comment.comment4}}</view>
+        </view>
     </view>
 </template>
