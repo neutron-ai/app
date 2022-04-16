@@ -29,9 +29,9 @@
         <view class="iconfont icon-arrow-right"></view>
     </view>
     
-    <scroll-view class="locateImg">
+    <scroll-view class="locateImg" scroll-x="true">
         <block wx:for="{{locateData}}" wx:for-item="item" wx:key="key">
-                <template is="locateInfoTpl" data="{{item}}"></template>
+                <template is="locateInfoTpl" data="{{item}}"/>
         </block>
     </scroll-view>
     

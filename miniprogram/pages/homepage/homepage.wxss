@@ -105,7 +105,6 @@
     white-space: nowrap;
     width: 100%;
     margin-top: 30rpx;
-    
 }
 
 ::-webkit-scrollbar {
@@ -120,7 +119,7 @@
     margin-top: 70rpx;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    
 }
 
 .title2 {
@@ -149,6 +148,12 @@
     margin-left: 350rpx;
 }
 
+.locateImg {
+    position: relative;
+    white-space: nowrap;
+    width: 100%;
+    margin-top: 30rpx;
+}
 
 page {
     background-color: #FFFFFF;
