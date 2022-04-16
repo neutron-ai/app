@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="container">
+  <image class="avatar" src="https://cdn.jsdelivr.net/gh/neutron-ai/images@main/index.png"></image>
+  <text class="headText">正在加载</text>
+  <text class="text2">固废资源回收，从你我做起</text>
+  <view class="twoButtons">
+    <button class="signin" catchtap="onTapJump">
+      <text class="sign">注册</text>
+    </button>
+    <button class="login" catchtap="onTapJump">
+      <text class="log">登录</text>
+    </button>
+  </view>
+
+  
+
+  <view class="environment" bindtap="onChangeShowEnvChoose">当前环境 {{ selectedEnv.alias }}</view>
+
+  <cloud-tip-modal showUploadTipProps="{{showUploadTip}}"></cloud-tip-modal>
+
+
+
+
+
+
+
+
+</view>

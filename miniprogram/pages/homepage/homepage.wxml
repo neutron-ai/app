@@ -1,0 +1,38 @@
+<!--pages/homepage/homepage.wxml-->
+<import src="../homepage/Tample/classifyBtn-tpl"/>
+<import src="../homepage/Tample/locateInfo-tpl"/>
+
+<view class="container">
+    <view class="settings iconfont icon-settings"></view>
+    <view class="two">
+        <text class="navUp">送至</text>
+        <text class="iconfont icon-arrow-down"></text>
+    </view>
+    <text class="position">合肥工业大学宣城校区..</text>
+    <view class="search">
+        <input type="text" class="input" placeholder="搜索附近的回收站点，提高你的效率，享受此时生活"/>
+        <button class="iconfont icon-search searchImg"></button>
+    </view>
+    <text class="classify">功能分类</text>
+    <view class="line"></view>
+    <scroll-view class="fourBtns" scroll-x="true">
+        <block wx:for="{{classifyData}}" wx:for-item="item" wx:key="key" >
+            <template is="classifyTpl" data="{{item}}"/>
+        </block>
+    </scroll-view>
+    <view class="title2-container">
+        <view>
+            <text class="title2">最近站点情况</text>
+            <view class="line2"></view>
+        </view>
+        <text class="moreInfo">更多</text>
+        <view class="iconfont icon-arrow-right"></view>
+    </view>
+    
+    <scroll-view class="locateImg">
+        <block wx:for="{{locateData}}" wx:for-item="item" wx:key="key">
+                <template is="locateInfoTpl" data="{{item}}"></template>
+        </block>
+    </scroll-view>
+    
+</view>

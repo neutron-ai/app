@@ -1,0 +1,4 @@
+<!--components/navBar/navBar.wxml-->
+<view class="container">
+    <image class="settings" src="https://cdn.jsdelivr.net/gh/neutron-ai/images@main/settings.png"></image>
+</view>

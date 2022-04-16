@@ -1,0 +1,13 @@
+.cmt-container {
+    position: relative;
+    width: 100rpx;
+    height: 36rpx;
+    line-height: 36rpx;
+    font-size: 28rpx;
+    font-family: "黑体";
+    color: #474747;
+    margin-left: 20rpx;
+    margin-top: 25rpx;
+    background-color: #Aef516;
+    border-radius: 10rpx;
+}

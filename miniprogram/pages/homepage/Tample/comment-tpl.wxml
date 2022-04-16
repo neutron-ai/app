@@ -1,0 +1,3 @@
+<template name="commentTpl">
+    <view class="cmt-container">{{item1.comment}}</view>
+</template>

@@ -1,0 +1,12 @@
+.btn-container {
+    display: inline-flex;
+    width: 212rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    background-color: #AEF516;
+    border-radius: 50rpx;
+    margin-left: 20rpx;
+    font-size: 35rpx;
+    justify-content: center;
+    font-family: "黑体";
+}

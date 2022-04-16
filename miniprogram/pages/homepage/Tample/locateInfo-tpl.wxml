@@ -1,0 +1,25 @@
+<import src="../Tample/comment-tpl"/>
+
+<template name="locateInfoTpl">
+    <view class="info-container">
+        <image class="infoImg" src="{{item.image}}"></image>
+        <view class="starContainer">
+            <view class="score">{{item.grade}}</view>
+            <view class="star iconfont icon-star"></view>
+            <view class="starNum">{{item.likeNum}}</view>
+        </view>
+        <view class="starBtn iconfont icon-love"></view>
+        <view class="infoTitle">{{item.title}}</view>
+        <view class="info">
+            <view class="positionIcon iconfont icon-locate1e"></view>
+            <view class="dist">{{item.distance}}</view>
+            <view class="timeIcon iconfont icon-time"></view>
+            <view class="timeInfo">{{item.time}}</view>
+        </view>
+        <scroll-view class="commentInfo" scroll-x="true">
+            <block wx:for="{{commentData}}" wx:for-item="item1" wx:key="key">
+                <template is="commentTpl" data="{{item1}}">{{}}</template>
+            </block>
+        </scroll-view>
+    </view>
+</template>

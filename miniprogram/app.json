@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/homepage/homepage",
+    "pages/index/index",
+    "pages/sign_in/sign_in"
+    
+  ],
+  "usingComponents": {
+    "navBar": "components/navBar/navBar"
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "固废回收",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
