@@ -1,6 +1,7 @@
 /* pages/homepage/homepage.wxss */
 @import "../homepage/Tample/classifyBtn-tpl.wxss";
 @import "../homepage/Tample/locateInfo-tpl.wxss";
+@import "../homepage/Tample/recommend-tpl.wxss";
 
 .container {
     display: flex;
@@ -119,7 +120,6 @@
     margin-top: 70rpx;
     display: flex;
     flex-direction: row;
-    
 }
 
 .title2 {
@@ -145,7 +145,7 @@
     font-family: "黑体";
     font-size: 27rpx;
     color: #1B1B21;
-    margin-left: 350rpx;
+    margin-left: 365rpx;
 }
 
 .locateImg {
@@ -153,6 +153,76 @@
     white-space: nowrap;
     width: 100%;
     margin-top: 30rpx;
+}
+
+.title3-container {
+    position: relative;
+    margin-top: 70rpx;
+    display: flex;
+    flex-direction: row;
+}
+
+.title3 {
+    margin-left: 50rpx;
+    font-size: 35rpx;
+    font-weight: bold;
+    font-family: "黑体";
+}
+
+.line3 {
+    position: relative;
+    margin-top: 2rpx;
+    margin-left: 45rpx;
+    width: 153rpx;
+    height: 5rpx;
+    border-radius: 50rpx;
+    background-color: #FF673D;
+}
+
+.moreInfo3 {
+    position: relative;
+    display: inline-block;
+    font-family: "黑体";
+    font-size: 27rpx;
+    color: #1B1B21;
+    margin-left: 420rpx;
+}
+
+
+
+.bottomImg {
+    position: relative;
+    height: 210rpx;
+    margin-top: 70rpx;
+    margin-left: 40rpx;
+    margin-right: 40rpx;
+    margin-bottom: 70rpx;
+}
+
+.info-container {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 14rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    border-radius: 35rpx;
+    width: 600rpx;
+    height: 518rpx;
+    background-color: #f7f7f7;
+}
+
+.btn-container {
+    display: inline-flex;
+    width: 212rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    background-color: #AEF516;
+    border-radius: 50rpx;
+    margin-left: 20rpx;
+    font-size: 35rpx;
+    justify-content: center;
+    font-family: "黑体";
 }
 
 page {

@@ -2,6 +2,7 @@
 var dataObj1 = require("Data/imgData.js");
 var dataObj2 = require("Data/classifyData.js");
 var dataObj3 = require("Data/locateData.js");
+var dataObj4 = require("Data/recData.js");
 
 Page({
 
@@ -13,8 +14,20 @@ Page({
             settingsImg: "https://cdn.jsdelivr.net/gh/neutron-ai/images@main/settings.png"
         },
         classifyData: dataObj2.classifyData,
-        locateData: dataObj3.locateData
+        locateData: dataObj3.locateData,
+        recData: dataObj4.recData
+    },
 
+    onTapJump0:function(event) {
+        wx.navigateTo({
+          url: '../pay0/pay0',
+        })
+    },
+
+    onTapJump1:function(event) {
+        wx.navigateTo({
+          url: '../pay1/pay1',
+        })
     },
 
     /**

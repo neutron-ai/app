@@ -1,0 +1,12 @@
+<template name="recommendTpl">
+    <view class="rec-container">
+        <image class="recImg" src="{{item.image}}" mode="aspectFill"></image>
+        <view class="recStarContainer">
+            <view class="recScore">{{item.grade}}</view>
+            <view class="recStar iconfont icon-star"></view>
+        </view>
+        <view class="recStarBtn iconfont icon-love"></view>
+        <view class="recTitle">{{item.title}}</view>
+        <view class="recContent">{{item.comment}}</view>
+    </view>
+</template>
