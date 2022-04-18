@@ -1,0 +1,67 @@
+<!--pages/pay/pay.wxml-->
+<view class="pay">
+    <image class="greenBgc" src="https://cdn.jsdelivr.net/gh/neutron-ai/images@main/greenBgc.png"></image>
+    <view class="info">
+        <image class="payLogo" src="https://cdn.jsdelivr.net/gh/neutron-ai/images@main/payLogo.png"></image>
+        <view class="title">“快易好”回收站点</view>
+        <view class="information">
+            <view class="con1">
+                <view class="infoData1">高10%</view>
+                <view class="infoData2">回收价格高于同行</view>
+            </view>
+            <view class="con2">
+                <view class="starCon">
+                    <view class="infoData3">4.9</view>
+                    <view class="star iconfont icon-star"></view>
+                </view>
+                <view class="infoData4">评分</view>
+            </view>
+            <view class="con3">
+                <view class="infoData5">10分钟</view>
+                <view class="infoData6">上门</view>
+            </view>
+        </view>
+
+        <view class="priceInfo">
+            <view class="moneyFont">
+                <text class="icon iconfont icon-money"></text>
+                <text class="price">23.9</text>
+            </view>
+            <button class="decrease iconfont icon-decrease" bindtap="sub"></button>
+            <view class="num">{{count}}</view>
+            <button class="increase iconfont icon-enlarge1" bindtap="add"></button>
+        </view>
+
+        <view class="text">
+            <text class="detail" decode="true">&emsp;&emsp;垃圾分类站可以通过智能实时监控，实时监测垃圾分类站周边情况，为引导居民定期、准确分类垃圾提供了一种新途径。 垃圾分类站数字化后，垃圾分类站的垃圾可以转化为数据信号：垃圾处理、清扫、转运等活动可追溯</text>
+        </view>
+
+        <view class="title2">附加选择</view>
+
+        <view class="select-container">
+            <view class="clock iconfont icon-clock"></view>
+            <view class="imgInfo">定时预约上门</view>
+            <view class="addIcon">+</view>
+            <view class="yunaIcon iconfont icon-money"></view>
+            <view class="price1">4.0</view>
+            <radio class="radio" catchtap="checkedTap" checked="{{checked}}"></radio>
+        </view>
+
+        <view class="select-container">
+            <view class="people iconfont icon-people"></view>
+            <view class="imgInfo">回收人员进行分类</view>
+            <view class="addIcon1">+</view>
+            <view class="yunaIcon iconfont icon-money"></view>
+            <view class="price1">1.5</view>
+            <radio class="radio" catchtap="checkedTap1" checked="{{checked1}}"></radio>
+        </view>
+
+        <view class="button">
+            <view class="whiteCir">
+                <view class="btnImg iconfont icon-Bag"></view>
+            </view>
+            <view class="purchase">去结算</view>
+        </view>       
+
+    </view>
+</view>

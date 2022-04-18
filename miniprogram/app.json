@@ -1,8 +1,14 @@
 {
   "pages": [
-    "pages/homepage/homepage",
     "pages/index/index",
-    "pages/sign_in/sign_in"
+    "pages/homepage/homepage",
+    "pages/pay0/pay0",
+    "pages/my/my",
+    "pages/sign_in/sign_in",
+    "pages/collection/collection",
+    "pages/massage/massage",
+    "pages/pay1/pay1"
+    
     
   ],
   "usingComponents": {
@@ -15,6 +21,34 @@
     "navigationBarTitleText": "固废回收",
     "navigationBarTextStyle": "black",
     "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#A6A6A6",
+    "selectedColor": "#AEF516",
+    "backgroundColor": "#FFFFFF",
+    "position": "bottom",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/homepage/homepage",
+      "iconPath": "images/tabImg1.png",
+      "selectedIconPath": "images/selectedImg1.png"   
+    },
+    {
+      "pagePath": "pages/collection/collection",
+      "iconPath": "images/tabImg2.png",
+      "selectedIconPath": "images/selectedImg2.png"  
+    },
+    {
+      "pagePath": "pages/massage/massage",
+      "iconPath": "images/tabImg3.png",
+      "selectedIconPath": "images/selectedImg3.png"  
+    },
+    {
+      "pagePath": "pages/my/my",
+      "iconPath": "images/tabImg4.png",
+      "selectedIconPath": "images/selectedImg4.png"  
+    }
+  ]
   },
   
   "sitemapLocation": "sitemap.json",

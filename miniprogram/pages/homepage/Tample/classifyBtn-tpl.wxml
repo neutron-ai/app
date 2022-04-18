@@ -1,3 +1,5 @@
 <template name="classifyTpl">
-    <button class="btn-container">{{item.title}}</button>
+    <view class="btn-container">
+        <view class="word">{{item.title}}</view>
+    </view>
 </template>

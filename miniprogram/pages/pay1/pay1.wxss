@@ -1,0 +1,313 @@
+/* pages/pay/pay.wxss */
+.pay {
+    display: flex;
+    flex-direction: column;
+}
+
+.greenBgc {
+    position: absolute;
+    width: 100%;
+    height: 780rpx;
+}
+
+.payLogo {
+    position: relative;
+    margin-top: -250rpx;
+    margin-left: 145rpx;
+    width: 500rpx;
+    height: 500rpx;
+}
+
+.info {
+    position: absolute;
+    top: 390rpx;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top-left-radius: 60rpx;
+    border-top-right-radius: 60rpx;
+}
+
+.title {
+    position: relative;
+    text-align: center;
+    font-family: "黑体";
+    font-size: 40rpx;
+    font-weight: bold;
+}
+
+.information {
+    position: relative;
+    width: 100%;
+    height: 100rpx;
+    margin-top: 35rpx;
+    display: flex;
+    flex-direction: row;
+}
+
+.con1 {
+    position: relative;
+    margin-left: 40rpx;
+    width: 256rpx;
+    height: 40rpx;
+    text-align: center;
+    justify-content: center;
+}
+
+.infoData1 {
+    position: relative;
+    font-size: 40rpx;
+    font-weight: bold;
+}
+
+.infoData2 {
+    position: relative;
+    margin-top: 1rpx;
+    font-size: 32rpx;
+    color: #FF673D;
+}
+
+.con2 {
+    position: relative;
+    margin-left: 60rpx;
+    width: 96rpx;
+    height: 100rpx;
+    text-align: center;
+    justify-content: center;
+}
+
+.starCon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoData3 {
+    position: relative;
+    font-size: 40rpx;
+    font-weight: bold;
+}
+
+.star {
+    position: relative;
+    color: #FF673D;
+    margin-left: 10rpx;
+}
+
+.infoData4 {
+    position: relative;
+    margin-top: 1rpx;
+    font-size: 32rpx;
+    color: #FF673D;
+}
+
+.con3 {
+    position: relative;
+    margin-left: 80rpx;
+    width: 138rpx;
+    height: 100rpx;
+    text-align: center;
+    justify-content: center;
+}
+
+.infoData5 {
+    position: relative;
+    font-size: 40rpx;
+    font-weight: bold;
+}
+
+.infoData6 {
+    position: relative;
+    margin-top: 1rpx;
+    font-size: 32rpx;
+    color: #FF673D;
+}
+
+.priceInfo {
+    position: relative;
+    margin-top: 35rpx;
+    display: flex;
+    flex-direction: row;
+    margin-left: 52rpx;
+    margin-right: 52rpx;
+    height: 64rpx;
+    align-items: center;
+    justify-content: center;
+}
+
+.moneyFont {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon {
+    position: relative;
+    font-size: 24rpx;
+    margin-top: 28rpx;
+    font-weight: bold;
+    background: linear-gradient(to right, #b2ef18, #bae01c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.price {
+    position: relative;
+    font-size: 48rpx;
+    font-weight: bold;
+    background: linear-gradient(to right, #bae01c, #fd6b3c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.num {
+    font-size: 34rpx;
+    font-weight: bold;
+}
+
+.decrease {
+    position: relative;
+    margin-left: 240rpx;
+    font-size: x-large;
+    color: #FF673D;
+}
+
+.increase {
+    position: relative;
+    font-size: 61rpx;
+    color: #FF673D;
+}
+
+.text {
+    position: relative;
+    width: 654rpx;
+    height: 160rpx;
+    margin-top: 25rpx;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.detail {
+    position: relative;
+    font-size: 24rpx;
+}
+
+.title2 {
+    position: relative;
+    margin-top: 35rpx;
+    margin-left: 48rpx;
+    font-family: "黑体";
+    font-size: 32rpx;
+    font-weight: bold;
+}
+
+.select-container {
+    position: relative;
+    margin-top: 20rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.clock {
+    position: relative;
+    margin-left: 40rpx;
+    font-size: x-large;
+}
+
+.imgInfo {
+    position: relative;
+    margin-left: 50rpx;
+    font-size: 34rpx;
+    font-family: "黑体";
+}
+
+.addIcon {
+    position: relative;
+    margin-left: 190rpx;
+    font-size: 34rpx;
+    font-weight: bold;
+}
+
+.radio {
+    position: relative;
+    margin-left: 20rpx;
+}
+
+radio .wx-radio-input{
+    border-radius: 50%; 
+    width: 40rpx;
+    height: 40rpx;
+}
+ 
+/* 选中后的样式 （可根据设计稿需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked::before{
+    border-radius: 50%;
+    width: 40rpx; 
+    height: 40rpx; 
+    
+    text-align: center;
+    font-size: 0rpx; /* 对勾大小 26rpx */
+    color:#fff; /* 对勾颜色 */
+    background: #AEF516;
+}
+
+.people {
+    position: relative;
+    margin-left: 40rpx;
+    font-size: x-large;
+}
+
+.addIcon1 {
+    position: relative;
+    margin-left: 123rpx;
+    font-size: 34rpx;
+    font-weight: bold;
+}
+
+.button {
+    position: relative;
+    margin-top: 60rpx;
+    margin-left: 488rpx;
+    width: 220rpx;
+    height: 80rpx;
+    margin-bottom: 50rpx;
+    border-radius: 50rpx;
+    background: linear-gradient(to right, #aef516, #fe693c);
+    align-items: center;
+    line-height: 80rpx;
+}
+
+.whiteCir {
+    position: absolute;
+    left: 25rpx;
+    top: 10rpx;
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 100%;
+    background-color: #fff;
+    text-align: center;
+    line-height: 60rpx;
+}
+
+.btnImg {
+    position: relative;
+    font-size: 44rpx;
+    background: linear-gradient(to right, #bae01c, #fd6b3c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.purchase {
+    position: relative;
+    margin-left: 100rpx;
+    font-size: 30rpx;
+    color: #fff;
+    font-family: "黑体";
+    font-weight: bold;
+}

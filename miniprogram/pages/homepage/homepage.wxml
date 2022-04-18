@@ -1,6 +1,7 @@
 <!--pages/homepage/homepage.wxml-->
 <import src="../homepage/Tample/classifyBtn-tpl"/>
 <import src="../homepage/Tample/locateInfo-tpl"/>
+<import src="../homepage/Tample/recommend-tpl"/>
 
 <view class="container">
     <view class="settings iconfont icon-settings"></view>
@@ -16,10 +17,28 @@
     <text class="classify">功能分类</text>
     <view class="line"></view>
     <scroll-view class="fourBtns" scroll-x="true">
-        <block wx:for="{{classifyData}}" wx:for-item="item" wx:key="key" >
-            <template is="classifyTpl" data="{{item}}"/>
+        <block wx:for="{{classifyData}}" wx:for-item="item" wx:key="key" wx:for-index="idx">
+            <view wx:if="{{idx == 0}}" class="btn-container" catchtap="onTapAct0">
+                <template is="classifyTpl" data="{{item}}"/>
+            </view>
+            <view wx:if="{{idx == 1}}" class="btn-container" catchtap="onTapAct1">
+                <template is="classifyTpl" data="{{item}}"/>
+            </view>
+            <view wx:if="{{idx == 2}}" class="btn-container" catchtap="onTapAct2">
+                <template is="classifyTpl" data="{{item}}"/>
+            </view>
+            <view wx:if="{{idx == 3}}" class="btn-container" catchtap="onTapAct3">
+                <template is="classifyTpl" data="{{item}}"/>
+            </view>
         </block>
     </scroll-view>
+
+
+
+
+
+
+
     <view class="title2-container">
         <view>
             <text class="title2">最近站点情况</text>
@@ -30,9 +49,40 @@
     </view>
     
     <scroll-view class="locateImg" scroll-x="true">
-        <block wx:for="{{locateData}}" wx:for-item="item" wx:key="key">
+        <block wx:for="{{locateData}}" wx:for-item="item" wx:key="key" wx:for-index="idx">
+            <view wx:if="{{idx == 0}}" catchtap="onTapJump0" class="info-container">
                 <template is="locateInfoTpl" data="{{item}}"/>
+            </view>
+            <view wx:elif="{{idx == 1}}" catchtap="onTapJump1" class="info-container"> 
+                <template is="locateInfoTpl" data="{{item}}"/>
+            </view>
         </block>
     </scroll-view>
+    
+    <view class="title3-container">
+        <view>
+            <text class="title3">为您优选</text>
+            <view class="line3"></view>
+        </view>
+        <text class="moreInfo3">更多</text>
+        <view class="iconfont icon-arrow-right"></view>
+    </view>
+
+    <view class="recommend">
+        <block wx:for="{{recData}}" wx:for-item="item" wx:key="key">
+                <template is="recommendTpl" data="{{item}}"/>
+        </block>
+    </view>
+
+
+
+
+
+
+
+    <image class="bottomImg" src="https://cdn.jsdelivr.net/gh/neutron-ai/images@main/banner1.png"></image>
+    
+
+    
     
 </view>

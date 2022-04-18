@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3331433 */
-  src: url('//at.alicdn.com/t/font_3331433_icu6524syf.woff2?t=1650025470783') format('woff2'),
-       url('//at.alicdn.com/t/font_3331433_icu6524syf.woff?t=1650025470783') format('woff'),
-       url('//at.alicdn.com/t/font_3331433_icu6524syf.ttf?t=1650025470783') format('truetype');
+  src: url('//at.alicdn.com/t/font_3331433_jfsur49tkxe.woff2?t=1650164654127') format('woff2'),
+       url('//at.alicdn.com/t/font_3331433_jfsur49tkxe.woff?t=1650164654127') format('woff'),
+       url('//at.alicdn.com/t/font_3331433_jfsur49tkxe.ttf?t=1650164654127') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,86 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Bag:before {
+  content: "\e633";
+}
+
+.icon-clock:before {
+  content: "\e689";
+}
+
+.icon-people:before {
+  content: "\e610";
+}
+
+.icon-enlarge1:before {
+  content: "\e613";
+}
+
+.icon-money:before {
+  content: "\e61e";
+}
+
+.icon-bag-l:before {
+  content: "\e60f";
+}
+
+.icon-decrease:before {
+  content: "\e60e";
+}
+
+.icon-IncreaseOutline:before {
+  content: "\e6a8";
+}
+
+.icon-remind1:before {
+  content: "\e641";
+}
+
+.icon-dizhidingwei:before {
+  content: "\e60a";
+}
+
+.icon-Wallet1:before {
+  content: "\e64e";
+}
+
+.icon-settings2:before {
+  content: "\e626";
+}
+
+.icon-wallet1:before {
+  content: "\e774";
+}
+
+.icon-wallet:before {
+  content: "\e662";
+}
+
+.icon--love:before {
+  content: "\e60d";
+}
+
+.icon-order:before {
+  content: "\e60c";
+}
+
+.icon-user:before {
+  content: "\e64b";
+}
+
+.icon-remind:before {
+  content: "\e71f";
+}
+
+.icon-settings1:before {
+  content: "\e69a";
+}
+
+.icon-Wallet:before {
+  content: "\eabb";
 }
 
 .icon-love:before {

@@ -10,3 +10,8 @@
     justify-content: center;
     font-family: "黑体";
 }
+
+.word {
+    position: relative;
+    margin-left: -20rpx;
+}
