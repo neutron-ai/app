@@ -1,15 +1,17 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/news2/news2",
+    "pages/login/login",
+    "pages/news1/news1",
+    "pages/MarketIntroduction/MarketIntroduction",
+    "pages/message/message",
     "pages/homepage/homepage",
+    "pages/index/index",
+    "pages/morePosition/morePosition",
     "pages/pay0/pay0",
     "pages/my/my",
-    "pages/sign_in/sign_in",
     "pages/collection/collection",
-    "pages/massage/massage",
     "pages/pay1/pay1"
-    
-    
   ],
   "usingComponents": {
     "navBar": "components/navBar/navBar"
@@ -39,7 +41,7 @@
       "selectedIconPath": "images/selectedImg2.png"  
     },
     {
-      "pagePath": "pages/massage/massage",
+      "pagePath": "pages/message/message",
       "iconPath": "images/tabImg3.png",
       "selectedIconPath": "images/selectedImg3.png"  
     },

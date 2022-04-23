@@ -1,0 +1,70 @@
+.sel2nav-container {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 14rpx;
+    margin-left: 15rpx;
+    margin-right: 15rpx;
+    width: 266rpx;
+    height: 355rpx; 
+}
+
+.img1 {
+    position: absolute;
+    border-radius: 50rpx;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 256rpx;
+}
+
+.info-container1 {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 266rpx;
+    height: 70rpx;
+    bottom: 90rpx;
+    align-items: center;
+}
+
+.img2-container {
+    position: relative;
+    margin-left: 20rpx;
+    width: 70rpx;
+    height: 60rpx;
+}
+
+.img2 {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 70rpx;
+}
+
+.info1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 96rpx;
+    height: 52rpx;
+    margin-left: 20rpx;
+}
+
+.navTitle {
+    position: relative;
+    font-size: 24rpx;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-family: "黑体";
+}
+
+.time1 {
+    position: relative;
+    font-size: 20rpx;
+    font-family: "黑体";
+    color: #cecece;
+}

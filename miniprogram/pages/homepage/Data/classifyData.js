@@ -1,6 +1,6 @@
 var classifyData = [
     {
-        title: "站点查找"
+        title: "站点查找",
     },
     {
         title: "今日资讯"

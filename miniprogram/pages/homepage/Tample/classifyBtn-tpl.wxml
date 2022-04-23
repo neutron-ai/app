@@ -1,5 +1,4 @@
 <template name="classifyTpl">
-    <view class="btn-container">
-        <view class="word">{{item.title}}</view>
-    </view>
+        <view class="word" wx:if="{{selected == idx + 1}}" style="color: {{fontColor}};">{{item}}</view>
+        <view class="word" wx:else>{{item}}</view>
 </template>

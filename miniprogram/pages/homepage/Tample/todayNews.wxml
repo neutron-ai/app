@@ -1,0 +1,15 @@
+<template name="todayNewsTpl">
+    <view class="newsContainer">
+        <view class="newsImg-container">
+            <image class="newsImg" src="{{item.image}}" mode="widthFix"></image>
+        </view>
+        <view class="content-container">
+            <view class="newsTitle">{{item.title}}</view>
+            <view class="newsContent">{{item.content}}</view>
+            <view class="newsInfo">
+                <view class="newsFrom">{{item.from}}</view>
+                <view class="newsTime">{{item.time}}</view>
+            </view>
+        </view>
+    </view>
+</template>

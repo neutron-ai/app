@@ -1,0 +1,97 @@
+.MarketIntroduction {
+  padding: 0 30rpx;
+  .light {
+    height: 180rpx;
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    .item {
+      color: rgba(128, 128, 128, 1);
+      font-size: 32rpx;
+      margin-right: 40rpx;
+    }
+    .active {
+      font-size: 36rpx;
+      font-family: "思源黑体";
+      color: rgba(28, 28, 28, 1);
+      position: relative;
+    }
+    .active:before {
+      content: "";
+      height: 7rpx;
+      border-radius: 4rpx;
+      width: 60%;
+      background-color: #4E4EF5;
+      position: absolute;
+      bottom: -8rpx;
+      left: 15%;
+    }
+  }
+
+  .market-box {
+    margin-top: 40rpx;
+    display: flex;
+    justify-content: space-between;
+    .col {
+      box-sizing: border-box;
+      width: calc(50% - 20rpx);
+      .item {
+        margin-bottom: 30rpx;
+        position: relative;
+        .distance {
+          position: absolute;
+          top: 16rpx;
+          right: 30rpx;
+          color: rgba(255, 255, 255, 1);
+          font-size: 24rpx;
+        }
+        .img {
+          width: 100%;
+          border-radius: 5rpx;
+        }
+        .content {
+          margin-top: 6rpx;
+          color: rgba(28, 28, 28, 1);
+          font-size: 28rpx;
+          font-family: "思源黑体";
+        }
+
+        .info {
+          margin-top: 8rpx;
+          display: flex;
+          justify-content: space-between;
+          .user {
+            display: flex;
+            align-items: center;
+            image {
+              width: 48rpx;
+              height: 48rpx;
+              border-radius: 50%;
+              margin-right: 8rpx;
+            }
+            .username {
+              color: rgba(28, 28, 28, 0.8);
+              font-size: 24rpx;
+              line-height: 28rpx;
+            }
+          }
+          .like {
+            display: flex;
+            align-items: center;
+            color: rgba(138, 138, 138, 1);
+            .icon {
+              font-size: 28rpx;
+              line-height: 28rpx;
+            }
+            .num {
+              font-size: 24rpx;
+              height: 29rpx;
+              font-family: "Roboto";
+            }
+          }
+        }
+      }
+    }
+  }
+}

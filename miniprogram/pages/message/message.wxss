@@ -1,0 +1,85 @@
+.message {
+  width: 100vw;
+}
+.message .light {
+  height: 180rpx;
+  width: 100%;
+  border-bottom: 1rpx solid #808080;
+}
+.message .title {
+  display: flex;
+  justify-content: space-around;
+}
+.message .title .item {
+  margin-top: 30rpx;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.message .title .item .icon {
+  height: 88rpx;
+  width: 88rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  background-color: #7880ff;
+  border-radius: 50%;
+}
+.message .title .item .name {
+  margin-top: 15rpx;
+  font-size: 28rpx;
+  font-family: "思源黑体";
+}
+.message .user-list {
+  margin-top: 60rpx;
+  width: 100%;
+  padding: 0 30rpx;
+}
+.message .user-list .user {
+  margin-bottom: 35rpx;
+  display: flex;
+  align-items: center;
+}
+.message .user-list .user .icon {
+  margin-right: 20rpx;
+}
+.message .user-list .user .icon image {
+  width: 92rpx;
+  height: 92rpx;
+  border-radius: 50%;
+}
+.message .user-list .user .msg-box {
+  width: calc(100% - 175rpx);
+}
+.message .user-list .user .msg-box .t {
+  display: flex;
+  justify-content: space-between;
+}
+.message .user-list .user .msg-box .t .username {
+  font-size: 32rpx;
+  font-family: "思源黑体";
+}
+.message .user-list .user .msg-box .t .time {
+  font-size: 24rpx;
+  color: #808080;
+}
+.message .user-list .user .msg-box .msg {
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+}
+.message .user-list .user .msg-box .msg .m {
+  color: #808080;
+}
+.message .user-list .user .msg-box .msg .num {
+  width: 32rpx;
+  height: 32rpx;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 13rpx;
+  color: #ffffff;
+  background-color: #ff8282;
+}

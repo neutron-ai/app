@@ -1,0 +1,3 @@
+<template name="contentTpl">
+    <p class="p" style="font-size: {{fontSize}}rpx; line-height: {{lineHeight*1.5}}rpx;">{{item}}</p>
+</template> 

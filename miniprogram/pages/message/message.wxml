@@ -1,0 +1,39 @@
+<!--pages/massage/massage.wxml-->
+<view class="message">
+    <view class="light"></view>
+    <view class="title">
+        <block wx:for="{{title}}" wx:key="*this">
+            <navigator class="item" url="{{item.url}}">
+                <view class="icon iconfont {{item.icon}}"></view>
+                <view class="name">
+                    {{item.name}}
+                </view>
+            </navigator>
+        </block>
+    </view>
+
+    <view class="user-list">
+        <block wx:for="{{userList}}" wx:key="*this">
+            <navigator class="user" url="{{item.url}}">
+                <view class="icon">
+                    <image src="{{item.icon}}"></image>
+                </view>
+                <view class="msg-box">
+                    <view class="t">
+                        <view class="username">{{item.username}}</view>
+                        <view class="time">{{item.endTime}}</view>
+                    </view>
+                    <view class="msg">
+                        <view class="m">
+                            {{item.endMessage}}
+                        </view>
+                        <view class="num">
+                            {{item.noRead}}
+                        </view>
+                    </view>
+                </view>
+            </navigator>
+        </block>
+    </view>
+
+</view>

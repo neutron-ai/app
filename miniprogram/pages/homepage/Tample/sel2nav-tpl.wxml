@@ -1,0 +1,14 @@
+<template name="sel2navTpl">
+    <view class="sel2nav-container">
+        <image class="img1" src="{{item.bigImage}}" mode="widthFix"></image>
+        <view class="info-container1">
+            <view class="img2-container">
+                <image class="img2" src="{{item.smallImage}}" mode="widthFix"></image>
+            </view>
+            <view class="info1">
+                <view class="navTitle">{{item.title}}</view>
+                <view class="time1">{{item.time}}</view>
+            </view>
+        </view>
+    </view>
+</template>

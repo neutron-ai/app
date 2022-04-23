@@ -1,5 +1,5 @@
-// pages/sign_in/sign_in.js
-var dataObj = require("Data/imgData.js");
+// pages/morePosition/morePosition.js
+var dataObj = require("./data");
 
 Page({
 
@@ -7,21 +7,21 @@ Page({
      * 页面的初始数据
      */
     data: {
+        data: dataObj.data
+    },
 
+    onTapJump:function(event) {
+        wx.switchTab({
+          url: '../homepage/homepage',
+        })
+        
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-
-      this.setData({
-        imgData: dataObj.imgData
-      })
-
-        wx.setNavigationBarTitle({
-          title: '登录',
-        })
+        
     },
 
     /**
@@ -56,7 +56,7 @@ Page({
      * 页面相关事件处理函数--监听用户下拉动作
      */
     onPullDownRefresh: function () {
-    
+
     },
 
     /**
@@ -71,21 +71,5 @@ Page({
      */
     onShareAppMessage: function () {
 
-    },
-
-    onTapJump:function (event) {
-      wx.switchTab({
-        url: '../homepage/homepage',
-        success:function () {
-          console.log("jump success")
-        },
-        fail:function () {
-          console.log("jump failed")
-        },
-        complete:function () {
-          console.log("jump complete")
-        }
-      })
     }
-
 })

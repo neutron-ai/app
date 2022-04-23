@@ -1,0 +1,68 @@
+/* pages/morePosition/morePosition.wxss */
+@import "./temple/moreInfo-tpl.wxss";
+
+.info-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 140rpx;
+}
+
+.nav-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+.morePosition {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.locatIcon {
+    position: relative;
+    margin-top: 105rpx;
+    margin-left: 204rpx;
+    font-size: 30rpx;
+    color: #F34949;
+}
+
+.nav {
+    position: relative;
+    margin-left: 6rpx;
+    margin-top: 105rpx;
+    font-size: 28rpx;
+    color: #AEF516;
+}
+
+.back-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+.back-icon {
+    position: relative;
+    margin-left: 40rpx;
+    margin-top: 40rpx;
+    font-size: 40rpx;
+    font-weight: bold;
+    color: #3B3B3B;
+}
+
+.title {
+    position: relative;
+    margin-left: 10rpx;
+    margin-top: 40rpx;
+    font-size: 40rpx;
+    font-weight: bold;
+    font-family: "黑体";
+    color: #333333;
+}

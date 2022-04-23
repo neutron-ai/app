@@ -1,0 +1,9 @@
+<import src="./star-tpl"></import>
+
+<template name="moreInfoTpl">
+    <view class="img-container">
+        <image class="img" src="{{item.image}}" mode="aspectFill"></image>
+        <view class="title">{{item.title}}</view>
+        <template is="starTpl" data="{{star: item.star}}"></template>
+    </view>
+</template>

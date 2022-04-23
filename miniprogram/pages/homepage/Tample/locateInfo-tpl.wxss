@@ -79,8 +79,7 @@
     flex-direction: row;
     align-items: center;
     text-align: center;
-    justify-content: center;
-    width: 390rpx;
+    width: 490rpx;
     height: 35rpx;
 }
 

@@ -1,0 +1,47 @@
+<!--pages/news1/news1.wxml-->
+<view class="news1-container">
+    <view class="img-container">
+        <image class="bigImg" src="{{bigImage}}" mode="widthFix"></image>
+    </view>
+    <view class="nav" catchtap="onTapBack">
+        <view class="back-icon iconfont icon-arrow-left"></view>  
+    </view>
+
+    <scroll-view scroll-y="true" style="position: absolute; top: 300rpx; left: 0; right: 0; bottom: 0;">
+        <view class="info-container">
+            <view class="info">
+                <view class="from">{{from}}</view>
+                <view class="time">{{time}}</view>
+            </view>
+            <view class="title">{{title}}</view>
+        </view>
+
+        <view class="text-container">
+            <scroll-view scroll-y="true">
+                <view class="text-box">
+                    <view class="headIcon">
+                        <view class="icon-from">
+                            <image class="img-from" src="{{smallImage}}"></image>
+                            <view class="word">{{from}}</view>
+                        </view>
+                        <view class="icontime">
+                            <view class="time-Icon iconfont icon-time"></view>
+                            <view class="word">{{time}}</view>
+                        </view>
+                        <view class="read">
+                            <view class="readIcon iconfont icon-eye"></view>
+                            <view class="word">{{readNum}}</view>
+                        </view>
+                    </view>
+
+                    <view class="text-title">{{head}}</view>
+                    <view class="wel">{{welcome}}</view>
+                    <block wx:for="{{content}}" wx:for-item="item" wx:key="key">
+                        <p class="p">{{item}}</p>
+                    </block>
+                </view>        
+            </scroll-view>
+        </view>
+    </scroll-view>
+</view>
+

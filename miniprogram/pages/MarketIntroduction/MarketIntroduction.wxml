@@ -1,0 +1,56 @@
+<!--pages/MarketIntroduction/MarketIntroduction.wxml-->
+<view class="MarketIntroduction" >
+    <view class="light">
+        <view class="back iconfont icon-arrow-left" catchtap="onTapBack"></view>
+    </view>
+    <view class="title">
+        <block wx:for="{{title}}" wx:key="*this">
+            <view class="item {{active == item.id ? 'active': ''}}" id="{{item.id}}" bind:tap="clickTitle">
+                {{item.name}}
+            </view>
+        </block>
+    </view>
+
+    <view class="market-box">
+        <view class="col">
+            <block wx:for="{{data.one}}" wx:key="*this">
+                <navigator class="item">
+                    <view class="distance">{{item.distance}}</view>
+                    <image class="img" mode="widthFix" src="{{item.img}}"></image>
+                    <view class="content">{{item.content}}</view>
+                    <view class="info">
+                        <view class="user">
+                            <image src="{{item.userinfo.icon}}"></image>
+                            <view class="username">{{item.userinfo.username}}</view>
+                        </view>
+                        <view class="like">
+                            <view class="icon iconfont icon--love"></view>
+                            <view class="num">{{item.like}}</view>
+                        </view>
+                    </view>
+                </navigator>
+
+            </block>
+        </view>
+        <view class="col">
+            <block wx:for="{{data.two}}" wx:key="*this">
+                <navigator class="item">
+                    <view class="distance">{{item.distance}}</view>
+                    <image class="img"  mode="widthFix" src="{{item.img}}"></image>
+                    <view class="content">{{item.content}}</view>
+                    <view class="info">
+                        <view class="user">
+                            <image src="{{item.userinfo.icon}}"></image>
+                            <view class="username">{{item.userinfo.username}}</view>
+                        </view>
+                        <view class="like">
+                            <view class="icon iconfont icon--love"></view>
+                            <view class="num">{{item.like}}</view>
+                        </view>
+                    </view>
+                </navigator>
+
+            </block>
+        </view>
+    </view>
+</view>
