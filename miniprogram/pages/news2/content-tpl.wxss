@@ -1,6 +1,6 @@
-.word {
+.p {
     position: relative;
     font-family: "黑体";
-    font-size: 35rpx;
-    color: #000000;
+    color: #515158;
+    text-indent: 2em;
 }

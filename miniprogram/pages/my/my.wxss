@@ -33,10 +33,11 @@
 }
 .my .menu-list .li .href .icon {
   padding: 0 5rpx;
-  font-size: x-large;
+  font-size: 50rpx;
 }
 .my .menu-list .li .href .text {
   display: inline-block;
+  margin-left: 10rpx;
 }
 .my .background1 {
   height: 1160rpx;
@@ -53,4 +54,3 @@
   z-index: -2;
   filter: opacity(20%);
 }
-/*# sourceMappingURL=my.wxss.map */

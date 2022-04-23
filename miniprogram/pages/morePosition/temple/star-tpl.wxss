@@ -1,0 +1,24 @@
+.star-container {
+    position: relative;
+    margin-top: 10rpx;
+    width: 170rpx;
+    height: 24rpx;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.star-style1 {
+    position: relative;
+    margin-left: 10rpx;
+    font-size: 27rpx;
+    color: #F34949;
+}
+
+.star-style0 {
+    position: relative;
+    margin-left: 10rpx;
+    font-size: 27rpx;
+    color: #A9A9B0;
+}

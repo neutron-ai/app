@@ -1,0 +1,12 @@
+<!--pages/login/login.wxml-->
+<view class="login">
+    <image class="background" src="https://cdn.jsdelivr.net/gh/neutron-ai/images@main/index.png"></image>
+    <view class="login-box">
+        <view class="t1">正在加载</view>
+        <view class="t2">固废资源回收，从你我做起</view>
+        <view class="button-group">
+            <view class="button">注册</view>
+            <view class="button" bind:tap="onTapJump">登录</view>
+        </view>
+    </view>
+</view>

@@ -1,8 +1,8 @@
 <!--pages/my/my.wxml-->
 <view class="my">
     <view class="userinfo">
-        <image class="user-icon" src="{{userinfo.icon}}"/>
-        <view class="username">{{userinfo.username}}</view>
+        <image class="user-icon" src="{{userinfo.avatarUrl}}"/>
+        <view class="username">{{userinfo.nickName}}</view>
     </view>
 
     <view class="menu-list">
@@ -16,9 +16,9 @@
                     </view>
                 </navigator>
             </view>
-
         </block>
     </view>
+    <view bind:tap="quit">调试使用 退出登录</view>
     <image class="background1" src="cloud://cloud1-0gksotcqf999923c.636c-cloud1-0gksotcqf999923c-1311035359/user/home.png"></image>
     <image class="background2" src="cloud://cloud1-0gksotcqf999923c.636c-cloud1-0gksotcqf999923c-1311035359/user/home.png"></image>
 </view>

@@ -1,0 +1,103 @@
+.MarketIntroduction {
+  padding: 0 30rpx;
+}
+.MarketIntroduction .light {
+  height: 180rpx;
+}
+.MarketIntroduction .title {
+  display: flex;
+  align-items: center;
+}
+.MarketIntroduction .title .item {
+  color: #808080;
+  font-size: 32rpx;
+  margin-right: 40rpx;
+}
+.MarketIntroduction .title .active {
+  font-size: 36rpx;
+  font-family: "思源黑体";
+  color: #1c1c1c;
+  position: relative;
+}
+.MarketIntroduction .title .active:before {
+  content: "";
+  height: 7rpx;
+  border-radius: 4rpx;
+  width: 60%;
+  background-color: #4E4EF5;
+  position: absolute;
+  bottom: -8rpx;
+  left: 15%;
+}
+.MarketIntroduction .market-box {
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.MarketIntroduction .market-box .col {
+  box-sizing: border-box;
+  width: calc(50% - 20rpx);
+}
+.MarketIntroduction .market-box .col .item {
+  margin-bottom: 30rpx;
+  position: relative;
+}
+.MarketIntroduction .market-box .col .item .distance {
+  position: absolute;
+  top: 16rpx;
+  right: 30rpx;
+  color: #ffffff;
+  font-size: 24rpx;
+}
+.MarketIntroduction .market-box .col .item .img {
+  width: 100%;
+  border-radius: 5rpx;
+}
+.MarketIntroduction .market-box .col .item .content {
+  margin-top: 6rpx;
+  color: #1c1c1c;
+  font-size: 28rpx;
+  font-family: "思源黑体";
+}
+.MarketIntroduction .market-box .col .item .info {
+  margin-top: 8rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.MarketIntroduction .market-box .col .item .info .user {
+  display: flex;
+  align-items: center;
+}
+.MarketIntroduction .market-box .col .item .info .user image {
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 50%;
+  margin-right: 8rpx;
+}
+.MarketIntroduction .market-box .col .item .info .user .username {
+  color: rgba(28, 28, 28, 0.8);
+  font-size: 24rpx;
+  line-height: 28rpx;
+}
+.MarketIntroduction .market-box .col .item .info .like {
+  display: flex;
+  align-items: center;
+  color: #8a8a8a;
+}
+.MarketIntroduction .market-box .col .item .info .like .icon {
+  font-size: 28rpx;
+  line-height: 28rpx;
+}
+.MarketIntroduction .market-box .col .item .info .like .num {
+  font-size: 24rpx;
+  height: 29rpx;
+  font-family: "Roboto";
+}
+
+.light .back {
+  position: relative;
+  font-size: 45rpx;
+  font-weight: bold;
+  margin-left: 10rpx;
+  margin-top: 110rpx;
+}

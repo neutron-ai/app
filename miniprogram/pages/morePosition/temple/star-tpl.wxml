@@ -1,0 +1,8 @@
+<template name="starTpl">
+    <view class="star-container">
+        <block wx:for="{{star}}" wx:for-item="i" wx:key="key">
+            <view wx:if="{{i == 1}}" class="star-style1 iconfont icon-star1"></view>
+            <view wx:if="{{i == 0}}" class="star-style0 iconfont icon-star1"></view>
+        </block>
+    </view>
+</template>

@@ -1,0 +1,27 @@
+@import "./star-tpl.wxss";
+
+.img-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 450rpx;
+    height: 398rpx;
+    margin-top: 35rpx;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.img {
+    position: relative;
+    width: 450rpx;
+    border-radius: 20rpx;
+}
+
+.title {
+    position: relative;
+    margin-top: 13rpx;
+    font-size: 28rpx;
+    font-family: "黑体";
+    color: #333333;
+}

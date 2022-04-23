@@ -1,0 +1,93 @@
+<!--pages/news2/news2.wxml-->
+<import src="./content-tpl"></import>
+
+<page-meta
+    root-background-color="{{backgroundColor}}"
+    page-style="color: {{fontColor}}; font-weight: {{fontWeight}}"
+    root-font-size="{{fontWeight}}"
+>
+</page-meta>
+
+<view class="news-container">
+    <view class="nav" catchtap="onTapBack">
+        <view class="back-icon iconfont icon-arrow-left"></view>  
+    </view>
+    <view class="title">{{title}}</view>
+    <view class="sTitle">
+        <view class="sour">即时通讯</view>
+        <view class="time">50分钟前</view>
+    </view>
+    <view class="img-container">
+        <image src="{{image}}" class="img" mode="aspectFill"></image>
+    </view>
+    <view class="summary">{{summary}}</view>
+    <view class="content-style">
+        <p class="pHead" style="font-size: {{fontSize}}rpx; line-height: {{lineHeight*1.5}}rpx;">各位同事：</p>
+        <block wx:for="{{content}}" wx:for-item="item" wx:key="key">
+            <template is="contentTpl" data="{{item, fontSize: fontSize, lineHeight: lineHeight}}"></template>
+        </block>
+    </view>
+
+</view>
+
+<view class="review">
+    <input type="text" class="input"/>
+    <view class="icon-container">
+        <view class="comment icon iconfont icon-talk"></view>
+        <view class="like icon iconfont icon-heart"></view>
+        <view class="set icon iconfont icon-icon_function_xiazaifujian" catchtap="pop"></view>
+
+        <view class="function" wx:if="{{showModal}}">
+            <view class="goBack iconfont icon-l-error" catchtap="hide"></view>
+            <view class="color-style">
+                <view class="white" catchtap="selectColor1">
+                    <view class="white-img" wx:if="{{selectColorIndex == 1}}" style="border: 2px solid#26262E;">Aa</view>
+                    <view class="white-img" wx:else>Aa</view>
+                    <view class="text" wx:if="{{selectColorIndex == 1}}" style="color: #26262E;">白色底</view>
+                    <view class="text" wx:else>白色底</view>
+                </view>
+                <view class="warm" catchtap="selectColor2">
+                    <view class="warm-img" wx:if="{{selectColorIndex == 2}}" style="border: 2px solid#26262E;">Aa</view>
+                    <view class="warm-img" wx:else>Aa</view>
+                    <view class="text" wx:if="{{selectColorIndex == 2}}" style="color: #26262E;">暖色底</view>
+                    <view class="text" wx:else>暖色底</view>
+                </view>
+                <view class="black" catchtap="selectColor3">
+                    <view class="black-img" wx:if="{{selectColorIndex == 3}}" style="border: 2px solid#26262E;">Aa</view>
+                    <view class="black-img" wx:else>Aa</view>
+                    <view class="text" wx:if="{{selectColorIndex == 3}}" style="color: #26262E;">深色底</view>
+                    <view class="text" wx:else>深色底</view>
+                </view>
+            </view>
+
+            <view class="weight-style">
+                <view class="normal" catchtap="selectWeight1">
+                    <view class="normal-img" wx:if="{{selectWeightIndex == 1}}" style="border: 2px solid#26262E;">Aa</view>
+                    <view class="normal-img" wx:else>Aa</view>
+                    <view class="text" wx:if="{{selectWeightIndex == 1}}" style="color: #26262E;">常规</view>
+                    <view class="text" wx:else>常规</view>
+                </view>
+                <view class="bold" catchtap="selectWeight2">
+                    <view class="bold-img" wx:if="{{selectWeightIndex == 2}}" style="border: 2px solid#26262E;">Aa</view>
+                    <view class="bold-img" wx:else>Aa</view>
+                    <view class="text" wx:if="{{selectWeightIndex == 2}}" style="color: #26262E;">粗体</view>
+                    <view class="text" wx:else>粗体</view>
+                </view>
+                <view class="bolder" catchtap="selectWeight3">
+                    <view class="bolder-img" wx:if="{{selectWeightIndex == 3}}" style="border: 2px solid#26262E;">Aa</view>
+                    <view class="bolder-img" wx:else>Aa</view>
+                    <view class="text" wx:if="{{selectWeightIndex == 3}}" style="color: #26262E;">特粗</view>
+                    <view class="text" wx:else>特粗</view>
+                </view>
+            </view>
+
+            <view class="slider-container">
+                <view class="left-text">A</view>
+                <slider class="slider" bindchanging="fontSizeChange" min="28" max="60" value="{{fontSize}}"></slider>
+                <view class="right-text">A</view>
+            </view>
+
+        </view>
+    </view>
+</view>
+
